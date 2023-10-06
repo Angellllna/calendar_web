@@ -7,6 +7,8 @@ const config = {
     "@storybook/preset-create-react-app",
     "@storybook/addon-onboarding",
     "@storybook/addon-interactions",
+    "@storybook/addon-designs",
+    // "storybook-addon-designs",
   ],
   framework: {
     name: "@storybook/react-webpack5",
@@ -17,4 +19,11 @@ const config = {
   },
   staticDirs: ["..\\public"],
 };
+// module.exports = {
+//   stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"],
+//   addons: ["storybook-addon-designs"]
+// };
+// module.exports = {
+//   addons: ["storybook-addon-designs"],
+// };
 export default config;

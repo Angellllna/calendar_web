@@ -1,4 +1,5 @@
 import { Button } from './Button';
+import { createContext } from 'react';
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
@@ -41,5 +42,15 @@ export const Small = {
   args: {
     size: 'small',
     label: 'Button',
+  },
+};
+
+
+export const myStory = () => <Button />;
+
+myStory.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/Klm6pxIZSaJFiOMX5FpTul9F/storybook-addon-designs-sample",
   },
 };
