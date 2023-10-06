@@ -1,0 +1,57 @@
+/* styles.css */
+
+@font-face {
+    font-family: 'NunitoSans-Regular';
+    src: url('/src/font/nunito-sans.regular.ttf') format('truetype');
+    
+  }
+  
+  .calendar-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+  }
+
+  .year-header {
+    align-items: center;
+    background-color: #dadae6; ;
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+    padding: 11px 0px;
+    position: relative;
+    width: 100%;
+  }
+
+  .yearName {
+    color: #605dec;
+    font-size: 18px; 
+    font-family: "NunitoSans-Regular", Helvetica;
+  }
+
+  .arrowDropDown-icon {
+    color: #605dec;
+  }
+
+  .mouns-header {
+    align-items: center;
+    display: inline-flex;
+    justify-content: space-between;
+    gap: 34px;
+    position: relative;
+  }
+
+.arrow-icon {
+    color: #dadae6; 
+  }
+
+.mounsName {
+    color: #605dec;
+    font-family: "NunitoSans-Regular", Helvetica;
+    font-size: 20px;
+}
+  
+
+  
+ 
