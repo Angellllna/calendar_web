@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { IconButton } from '@mui/material'; 
 import './styleHeder.css';
+import { changeMonth } from '../app/calendarReducer';
 
 import ArrowBackIcon from '@mui/icons-material/ArrowBack'; // Імпортуйте іконки Material-UI
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
@@ -18,7 +19,9 @@ const monthNames = [
 
 
 function CalendarHeader() {
-    const currentDate = useSelector((state) => state.yourReducer.currentDate); 
+   const currentDate = useSelector(
+      (state) => state.yourReducer.currentDate); 
+
     const dispatch = useDispatch();
   
     // Отримайте місяць та рік зі стану
@@ -29,15 +32,15 @@ function CalendarHeader() {
     
     const [setCurrentMonth] = useState(new Date().getMonth());
     const handlePrevClick = () => {
-        dispatch(/* Ваша дія Redux для зміни дати на наступний місяць */);
+     
     }
 
     const handleNextClick = () => {
-        dispatch(/* Ваша дія Redux для зміни дати на наступний місяць */);
+        
     }
 
     const handleDropDownClick = () => {
-      dispatch(/* Ваша дія Redux для зміни дати на наступний місяць */);
+      dispatch();
   }
 
     return (

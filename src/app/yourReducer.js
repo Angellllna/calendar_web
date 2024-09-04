@@ -3,11 +3,10 @@ import { createSlice } from '@reduxjs/toolkit';
 export const yourReducer = createSlice({
     name: 'yourReducer',
     initialState: {
-        currentDate: new Date(), // Початкова поточна дата (може бути будь-якою початковою датою)
+        currentDate: new Date(),
       },
       reducers: {
         setCurrentDate: (state, action) => {
-          // Дія для встановлення нової поточної дати
           state.currentDate = action.payload;
         },
       },
